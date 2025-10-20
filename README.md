@@ -4,6 +4,12 @@ MMFL-023-M, bHgP1MIsYgoW, 10.50.11.9
 
 scp -oControlPath=/tmp/demo <SOURCE> <DEST>
 
+#banner grab
+proxychains nc -nv <IP>  <PORT>
+
+#Port Scan
+proxychains nc -nvz <IP>  <PORT>
+
 ssh -MS /tmp/<SOCKET_NAME> <USER>@<TGT IP>
 You can verify the socket (OPTIONAL)
 
